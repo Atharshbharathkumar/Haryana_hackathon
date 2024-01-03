@@ -1,33 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form | Dan Aleko</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Haryana Hacks</title>
 </head>
 <body>
-  <div class="wrapper">
-    <form action="">
-      <h1>Login</h1>
-      <div class="input-box">
-        <input type="text" placeholder="Username" required>
-        <i class='bx bxs-user'></i>
-      </div>
-      <div class="input-box">
-        <input type="password" placeholder="Password" required>
-        <i class='bx bxs-lock-alt' ></i>
-      </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox">Remember Me</label>
-        <a href="#">Forgot Password</a>
-      </div>
-      <button type="submit" class="btn">Login</button>
-      <div class="register-link">
-        <p>Dont have an account? <a href="reg.html">Register</a></p>
-      </div>
-    </form>
-  </div>
+    <header>
+        <div class="logo">
+            <h1>Haryana Hacks</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#challenges">Challenges</a></li>
+                <li><a href="#follow">Follow</a></li>
+                <li><a href="#batches">Batches</a></li>
+                <li><a href="#rewards">Rewards</a></li>
+                <li><a href="comment.html">Videos</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <!-- User profile information and settings -->
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html" class="auth-button">Login</a>
+            <a href="reg.html" class="auth-button">Register</a>
+        </div>
+        
+    </header>
+
+    <!-- Rest of your HTML content remains unchanged -->
+
+    <footer>
+        <div class="footer-links">
+            <a href="#about-us">About Us</a>
+            <a href="#terms-of-service">Terms of Service</a>
+            <a href="#privacy-policy">Privacy Policy</a>
+        </div>
+        <div class="social-icons">
+            <!-- Social media icons for quick access -->
+        </div>
+    </footer>
+    <!-- ... (previous HTML code) ... -->
+
+<section class="featured-content">
+    <div class="content-category" id="challenges">
+        <h3>Featured Challenges</h3>
+        <!-- Display featured challenges dynamically -->
+        <!-- Challenge cards, images, descriptions, etc. -->
+    </div>
+    <div class="content-category" id="real-stories">
+        <h3>Real Stories</h3>
+        <!-- Display real stories dynamically -->
+        <!-- Story cards, images, descriptions, etc. -->
+    </div>
+    <div class="content-category" id="meditation-puzzles">
+        <h3>Meditation & Puzzles</h3>
+        <!-- Display meditation and puzzles dynamically -->
+        <!-- Content cards, images, descriptions, etc. -->
+    </div>
+    <div class="image-grid">
+        <!-- Add images for the grid -->
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+    <div class="today-news">
+        <div class="news-box">
+            <h3>Today's News</h3>
+            <p>News content goes here...</p>
+        </div>
+        <div class="news-box">
+            <h3>Breaking News</h3>
+            <p>More news content...</p>
+        </div>
+    </div>
+</section>
+
+<div class="auth-buttons">
+    <button class="auth-button" onclick="redirectToLogin()">Login</button>
+    <button class="auth-button" onclick="redirectToRegister()">Register</button>
+</div>
+
+<script>
+    function redirectToLogin() {
+        window.location.href = 'login.html';
+    }
+
+    function redirectToRegister() {
+        window.location.href = 'register.html';
+    }
+</script>
+
+
+
+    <script src="app.js"></script>
 </body>
 </html>
