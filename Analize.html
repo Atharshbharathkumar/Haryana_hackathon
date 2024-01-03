@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5; /* Light gray background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+        }
+
+        form {
+            background-color: gray; /* White form background color */
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: orangered;
+        }
+
+        label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+        textarea {
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .cente{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>CHALLENGE QUESTION</h1>
+        
+        <label for="q1">1. What kind of music, movies, or books do you enjoy?</label>
+        <textarea id="q1" rows="4" maxlength="200"></textarea>
+
+        <label for="q2">2. What's the best compliment you've ever received?</label>
+        <textarea id="q2" rows="4" maxlength="200"></textarea>
+
+        <label for="q3">3. If money were no object, what's the first thing you would buy?</label>
+        <textarea id="q3" rows="4" maxlength="200"></textarea>
+
+        <label>4. Do you think dreams have deeper meanings?</label>
+        <input type="radio" id="html1" name="dreams" value="yes">
+        <label for="html1">Yes</label>
+        <input type="radio" id="css" name="dreams" value="no">
+        <label for="css">No</label>
+
+        <label for="q5">5. Do you have a biggest fear?</label>
+        <input type="radio" id="fear-yes" name="fear" value="yes">
+        <label for="fear-yes">Yes</label>
+        <input type="radio" id="fear-no" name="fear" value="no">
+        <label for="fear-no">No</label>
+
+        <label for="q6">6. If you could relive any moment in your life, would you?</label>
+        <textarea id="q6" rows="4" maxlength="200"></textarea>
+
+        <label for="q7">7. What is something that makes you really angry?</label>
+        <textarea id="q7" rows="4" maxlength="200"></textarea>
+        <br>
+        <div class="cente">
+            <button><a href="index.html">submit</a></button>
+          </div>
+
+
+    </form>
+</body>
+</html>
